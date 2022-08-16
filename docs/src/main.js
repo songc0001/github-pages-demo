@@ -1,8 +1,3 @@
-
-
-
-
-
 // vue3-sfc-loader
 
 const options = {
@@ -32,9 +27,9 @@ const { createApp } = Vue
 
 const app = createApp({
   components: {
-    'App': Vue.defineAsyncComponent(() => loadModule('./App.vue', options))
+    'my-try': Vue.defineAsyncComponent(() => loadModule('./App.vue', options))
   },
-  template: '<App></App>'
+  template: 'Hello<my-try></my-try>'
 });
 
 app.config.compilerOptions.delimiters = ['${', '}']
@@ -47,6 +42,7 @@ app.config.errorHandler = (err) => {
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
+
 app.use(ElementPlus)
 
 app.mount('#app');
