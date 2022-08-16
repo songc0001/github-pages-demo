@@ -29,7 +29,7 @@ export const setupAll = () => {
 
   const app = createApp({
     components: {
-      'my-try': Vue.defineAsyncComponent(() => loadModule('./App.vue', options))
+      'my-try': Vue.defineAsyncComponent(() => loadModule('./src/App.vue', options))
     },
     template: 'Hello<my-try></my-try>'
   });
