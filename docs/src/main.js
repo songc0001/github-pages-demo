@@ -3,9 +3,7 @@ export const setupAll = () => {
   // vue3-sfc-loader
 
   const options = {
-    moduleCache: {
-      vue: Vue
-    },
+    moduleCache: { vue: Vue },
     async getFile(url) {
 
       const res = await fetch(url);
