@@ -1,4 +1,4 @@
-export const setupAll = () => {
+const setupAll = () => {
 
   // vue3-sfc-loader
 
@@ -25,11 +25,13 @@ export const setupAll = () => {
 
   const { createApp } = Vue
 
+  const App = "./src/App.vue"
+
   const app = createApp({
     components: {
-      'my-try': Vue.defineAsyncComponent(() => loadModule('./src/App.vue', options))
+      'my-app': Vue.defineAsyncComponent(() => loadModule(App, options))
     },
-    template: 'Hello<my-try></my-try>'
+    template: 'Hello<my-app/>'
   });
 
   app.config.compilerOptions.delimiters = ['${', '}']
