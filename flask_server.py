@@ -16,7 +16,7 @@ from flask import Flask, render_template
 
 from flask_config import Config
 
-app = Flask(__name__, static_url_path='', static_folder='dist', template_folder='dist')
+app = Flask(__name__, static_url_path='', static_folder='docs', template_folder='dist')
 app.config.from_object(Config)
 
 
