@@ -1,6 +1,6 @@
 .DS_Store
 .git
-.old
+.old/*
 .test
 .vscode
 __pycache__
