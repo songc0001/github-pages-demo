@@ -1,0 +1,7 @@
+.DS_Store
+.git
+.old
+.test
+.vscode
+__pycache__
+
