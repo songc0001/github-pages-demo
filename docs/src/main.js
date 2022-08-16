@@ -3,19 +3,7 @@ export const setupAll = () => {
   // vue3-sfc-loader  
 
   const options = {
-    moduleCache: {
-      'vue': Vue,
-      /*'url!'(content, path, type, options) {
-
-        if ( type === '.svg' )
-          return `data:image/svg+xml;base64,${btoa(content)}`;
-        
-        if ( type === '.png' )
-          return `data:image/png;base64,${btoa(content)}`;        
-
-        throw new Error(`${ type } not handled by url!`);
-      },*/
-    },
+    moduleCache: {'vue': Vue},
     handleModule(type, getContentData, path, options) {
 
       switch (type) {
