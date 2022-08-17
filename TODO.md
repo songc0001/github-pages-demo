@@ -10,6 +10,9 @@
   - Done: 17/8/2022
   - Comment: src記得要用./<>/*.*
 - [ ] Element-Plus建立RWD主頁
+  - [x] Layout Header Design
+    - Done: 17/8/2022
+    - Comment: 最後都係用最簡單的方式，唔搞左右
 - [ ] 工具頁
 - [ ] 簡單Blog頁
 - [ ] Admin頁
