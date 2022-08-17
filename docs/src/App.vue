@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import LayoutVue from './layout/Layout.vue'
+import Layout from './layout/Layout.vue'
 
 export default {
   name: 'App',
   components: {
-    Layout: LayoutVue
+    Layout
   }
 }
 </script>
