@@ -1,7 +1,7 @@
 {
-  "name": "MyWebPage",
+  "name": "my-web-page",
   "version": "0",
-  "description": "MyWebPage",
+  "description": "Vue3+Element-plus菜鳥開發記錄",
   "author": "",
   "private": false,
   "scripts": {
@@ -113,7 +113,7 @@
     "url": "git+"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/songc0001/github-pages-demo/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/songc0001/github-pages-demo"
 }

@@ -1,24 +1,26 @@
-# README
+# Vue3+Element-plus菜鳥開發記錄 README
 
-## 打算
+## 設計
 
 Main
+
 - vue.js 框架
 - vue-sfc-loader 直接在html用Vue SFC
 - element-plus UI框架
 - element-pro-components UI框架
 
 plugin
+
 - [typescript-compile]<https://github.com/niutech/typescript-compile>
 - axios 數據request
 - mock 后台數據模擬
 
 Vue Element Admin Examples
+
 - GitHub - tolking-element-admin-template- 一个基础的后台管理系统模版，方便快速开发
 - GitHub - newbee-ltd-vue3-admin- 🔥 🎉 Vue 3.0 + Vite 2.0 + Vue-Router 4.0 + Element-Plus + Echarts 5.0 + Axios 开发的后台管理系统
 - GitHub - kailong321200875-vue-element-plus-admin- A set of background integration scheme based on vue3, element-plus, typescr
 - GitHub - cmdparkour-vue-admin-box- vue3,vite,element-plus中后台管理系统，集成四套基础模板，大量可利用组件，模板页面
-
 
 ## Folders-by-Feature Structure
 
@@ -249,4 +251,4 @@ export const plugins = [
 
 ## Favicon制作
 
-https://www.favicon.cc/
+<https://www.favicon.cc/>
