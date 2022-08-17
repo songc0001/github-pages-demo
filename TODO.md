@@ -1,6 +1,5 @@
 # To Do List
 
-- [ ] vue3-sfc-loader - option.getresource
 - [ ] 固定vue3-sfc-loader版本
 - [ ] Element-Plus建立RWD主頁
 - [ ] 工具頁
@@ -12,3 +11,7 @@
 - [ ] Description
   - Done: [Date]
   - Comment: [String]
+
+- [ ] vue3-sfc-loader - option.getresource
+  - Done: 17/8/2022
+  - Comment: 睇唔明放棄
