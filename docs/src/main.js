@@ -68,7 +68,7 @@ export const setupAll = () => {
     components: {
       'my-app': Vue.defineAsyncComponent(() => loadModule(App, options))
     },
-    template: 'Hello<my-app/>'
+    template: '<my-app/>'
   });
 
   app.config.compilerOptions.delimiters = ['${', '}']

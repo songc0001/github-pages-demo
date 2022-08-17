@@ -4,4 +4,6 @@
 
 - 用vue3-sfc-loader載入.vue
   - 用handleModule handle `.png`
+- 固定vue3-sfc-loader版本
+- Try element-plus image
   

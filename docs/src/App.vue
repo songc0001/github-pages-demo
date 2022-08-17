@@ -1,16 +1,22 @@
-<template>    
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 in CodeSandbox!" />  
+<template>  
+  <el-image style="width: 100px; height: 100px" alt="Vue logo" :src="urls" />
+  <HelloWorld msg="Hello Vue 3 in CodeSandbox!" />
 </template>
 
 <script>
-import HelloWorldVue from "./components/HelloWorld.vue";
+import HelloWorldVue from './components/HelloWorld.vue'
+
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld: HelloWorldVue,
+    HelloWorld: HelloWorldVue
   },
-};
+  data() {
+    return {
+      urls: './src/assets/img/logo.png'
+    }
+  }
+}
 </script>
 
 <style>
