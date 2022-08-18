@@ -4,7 +4,7 @@
 
 <script>
 
-import Layout from './layout/Layout.vue'
+import Layout from './layouts/Layout.vue'
 
 export default {
   name: 'App',
