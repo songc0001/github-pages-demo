@@ -2,6 +2,7 @@
 
 ## To Do List
 
+- [ ] Font睇下點統一返
 - [ ] 工具頁Layout Design
   - [ ] 用
 - [ ] 簡單Blog頁Layout Design
@@ -11,6 +12,10 @@
 - [ ] Try to re-structure of VitePress
 
 ## 已完成
+
+### 18/8/2022
+
+- [x] 因為Element-plus需要先import Vue, 所以只能放head src js
 
 ### 17/8/2022
 

@@ -3,17 +3,7 @@ export const setupAll = () => {
   // vue3-sfc-loader  
 
   const options = {
-    moduleCache: {'vue': Vue},
-    handleModule(type, getContentData, path, options) {
-
-      switch (type) {
-        case '.json': return JSON.parse(source);
-        //case '.svg': return `data:image/svg+xml;base64,${btoa(content)}`;
-        //case '.svg': return 'data:image/svg+xml,' + await getContentData(false);
-        case '.png': return path;        
-        default: return undefined; // let vue3-sfc-loader handle this
-      }
-    },
+    moduleCache: { 'vue': Vue },
     async getFile(url) {
 
       const res = await fetch(url);
@@ -27,7 +17,21 @@ export const setupAll = () => {
       const style = Object.assign(document.createElement('style'), { textContent });
       const ref = document.head.getElementsByTagName('style')[0] || null;
       document.head.insertBefore(style, ref);
-    }, 
+    },
+    handleModule: async function (type, getContentData, path, options) {
+
+      switch (type) {
+        case '.json': return JSON.parse(source);
+        //case '.svg': return `data:image/svg+xml;base64,${btoa(content)}`;
+        //case '.svg': return 'data:image/svg+xml,' + await getContentData(false);
+        case '.png': return path;
+        case '.css': {
+          options.addStyle(await getContentData(false));
+          return null;
+        };
+        default: return undefined; // let vue3-sfc-loader handle this
+      }
+    },
     log(type, ...args) {
 
       console.log(type, ...args);

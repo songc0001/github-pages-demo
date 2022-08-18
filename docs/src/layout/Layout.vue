@@ -1,9 +1,13 @@
 <template>
-  <el-container direction="vertical">
+  <el-container class="common-layout" direction="vertical">
     <el-header>
       <NavBar />
     </el-header>
-    <el-main>Main</el-main>
+    <el-main>
+      <!-- Main -->
+      <el-button text>My Web Pages</el-button>
+      <el-button text>您好</el-button>
+    </el-main>
   </el-container>
 </template>
 
@@ -17,4 +21,5 @@ export default {
   }
 }
 </script>
+
 
