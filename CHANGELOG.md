@@ -2,9 +2,8 @@
 
 ## To Do List
 
-- [ ] Font睇下點統一返
 - [ ] 工具頁Layout Design
-  - [ ] 用
+  - [ ] 參考<https://tools.miku.ac/>
 - [ ] 簡單Blog頁Layout Design
 - [ ] Router
 - [ ] mockjs + axios模擬數據
@@ -16,6 +15,8 @@
 ### 18/8/2022
 
 - [x] 因為Element-plus需要先import Vue, 所以只能放head src js
+- [x] Font睇下點統一返
+  - [x] 加入左styles/css-vars.css override css
 
 ### 17/8/2022
 

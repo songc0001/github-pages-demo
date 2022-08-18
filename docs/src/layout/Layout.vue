@@ -6,7 +6,7 @@
     <el-main>
       <!-- Main -->
       <el-button text>My Web Pages</el-button>
-      <el-button text>您好</el-button>
+      <el-button text>Tools</el-button>
     </el-main>
   </el-container>
 </template>

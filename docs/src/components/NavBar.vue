@@ -3,8 +3,7 @@
     <el-menu class="el-menu-demo" mode="horizontal">
       <!-- 左上個LOGO -->
       <div class="logo">
-        <el-button link>My Web Pages</el-button>
-        <el-button link>您好</el-button>
+        <el-button link>My Web Pages</el-button>        
       </div>
       <el-menu-item index="1">Tools</el-menu-item>
       <el-menu-item index="2">Blog</el-menu-item>
