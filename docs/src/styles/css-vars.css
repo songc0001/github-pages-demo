@@ -1,4 +1,19 @@
-html{
-  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
-  'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+@import "./font.css";
+
+body {
+  font-family: 'Pop-gothic', 'Comic Sans MS', 'Noto Sans TC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Microsoft JhengHe', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+a {
+  color: var(--ep-color-primary);
+}
+
+code {
+  border-radius: 2px;
+  padding: 2px 4px;
+  background-color: var(--ep-color-primary-light-9);
+  color: var(--ep-color-primary);
 }

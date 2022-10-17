@@ -1,96 +1,30 @@
-export const setupAll = () => {
+// 在index.html載入
+// import { createApp, defineAsyncComponent } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 
-  // vue3-sfc-loader  
+import { loadModule, options } from '../src/plugin/vue3-sfc-loader/index.js'
 
-  const options = {
-    moduleCache: { 'vue': Vue },
-    async getFile(url) {
+// vue3-sfc-loader要用defineAsyncComponent載入Vue
+// createApp(defineAsyncComponent(() => loadModule('../src/App.vue', options))).mount(document.body);
 
-      const res = await fetch(url);
-      if (!res.ok)
-        throw Object.assign(new Error(res.statusText + ' ' + url), { res });
-      return {
-        getContentData: asBinary => asBinary ? res.arrayBuffer() : res.text(),
-      }
-    },
-    addStyle(textContent) {
-      const style = Object.assign(document.createElement('style'), { textContent });
-      const ref = document.head.getElementsByTagName('style')[0] || null;
-      document.head.insertBefore(style, ref);
-    },
-    handleModule: async function (type, getContentData, path, options) {
+// const { createApp } = Vue
 
-      switch (type) {
-        case '.json': return JSON.parse(source);
-        //case '.svg': return `data:image/svg+xml;base64,${btoa(content)}`;
-        //case '.svg': return 'data:image/svg+xml,' + await getContentData(false);
-        case '.png': return path;
-        case '.css': {
-          options.addStyle(await getContentData(false));
-          return null;
-        };
-        default: return undefined; // let vue3-sfc-loader handle this
-      }
-    },
-    log(type, ...args) {
+const App = "../src/App.vue";
 
-      console.log(type, ...args);
-    },
-    compiledCache: {
-      set(key, str) {
+const app = Vue.createApp(Vue.defineAsyncComponent(() => loadModule(App, options)));
 
-        // naive storage space management
-        for (; ;) {
+app.component('HelloWorld', Vue.defineAsyncComponent(() => loadModule('../src/components/HelloWorld.vue', options)))
 
-          try {
+app.config.compilerOptions.delimiters = ['${', '}']
 
-            // doc: https://developer.mozilla.org/en-US/docs/Web/API/Storage
-            window.localStorage.setItem(key, str);
-            break;
-          } catch (ex) {
-
-            // handle: Uncaught DOMException: Failed to execute 'setItem' on 'Storage': Setting the value of 'XXX' exceeded the quota
-
-            window.localStorage.removeItem(window.localStorage.key(0));
-          }
-        }
-      },
-      get(key) {
-
-        return window.localStorage.getItem(key);
-      },
-    },
-  }
-
-  const { loadModule } = window['vue3-sfc-loader'];
-
-  const { createApp } = Vue
-
-  const App = "./src/App.vue"
-
-  const app = createApp({
-    components: {
-      'my-app': Vue.defineAsyncComponent(() => loadModule(App, options))
-    },
-    template: '<my-app/>'
-  });
-
-  app.config.compilerOptions.delimiters = ['${', '}']
-
-  app.config.errorHandler = (err) => {
-    /* 处理错误 */
-    console.log(err)
-  }
-
-  for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
-    app.component(key, component)
-  }
-
-  app.use(ElementPlus)
-
-  app.mount('#app');
-
+app.config.errorHandler = (err) => {
+  /* 处理错误 */
+  console.log(err)
 }
 
-setupAll()
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+  app.component(key, component)
+}
 
+app.use(ElementPlus);
+
+app.mount('#app');

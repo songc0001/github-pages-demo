@@ -2,8 +2,14 @@
 
 ## To Do List
 
+- [ ] 改Layout,先抄Element-plus個Docs, 參考vitepress, https://vite-starter.element-plus.org/
+
 - [ ] 製作測試用頁面
   - [ ] 入口在View建立Test.vue載入components
+
+- [ ] vue3-sfc-loader再放好D
+  - [ ] 獨立js
+  - [ ] 改import?
   
 - [ ] 工具頁Layout Design
   - [ ] 參考<https://tools.miku.ac/>
@@ -15,6 +21,10 @@
 - [ ] Try to re-structure of VitePress
 
 ## 已完成
+
+### 16/10/2022
+- [x] css-vars.css Font全局重設
+- [x] vue3-sfc-loader option 1 可以用
 
 ### 18/8/2022
 

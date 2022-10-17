@@ -1,0 +1,6 @@
+/* Element-plus css */
+@import "https://unpkg.com/element-plus/dist/index.css";
+@import "https://unpkg.com/element-plus/theme-chalk/dark/css-vars.css";
+
+/* Self css */
+@import "./css-vars.css";
