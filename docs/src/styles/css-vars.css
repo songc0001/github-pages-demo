@@ -1,7 +1,7 @@
 @import "./font.css";
 
 body {
-  font-family: 'Pop-gothic', 'Comic Sans MS', 'Noto Sans TC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Microsoft JhengHe', sans-serif;
+  font-family: 'Comic Sans MS', 'Pop-gothic', 'Noto Sans TC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Microsoft JhengHe', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;

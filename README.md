@@ -7,9 +7,9 @@ Main
 - vue.js 框架
 - vue-sfc-loader 直接在html用Vue SFC
 - element-plus UI框架
-- element-pro-components UI框架
+- 參考(https://vite-starter.element-plus.org/)
 
-plugin
+plugin 下一步
 
 - [typescript-compile]<https://github.com/niutech/typescript-compile>
 - axios 數據request
