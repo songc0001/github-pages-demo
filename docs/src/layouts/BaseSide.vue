@@ -1,9 +1,12 @@
 <script>
 export default {
-  name: 'BaseSide',  
+  name: 'BaseSide', 
+  components: {
+    IconMenu: ElementPlusIconsVue["Menu"]
+  }, 
   data() {
     return {
-      isCollapse: Vue.ref(true)
+      isCollapse: Vue.ref(true),      
       };
   },
   methods: {
