@@ -1,14 +1,13 @@
 <script>
-//import { toggleDark } from '../composables/dark.js';
+import { isDark, toggleDark } from '../composables/dark.mjs'
 
 export default {
   name: 'BaseHeader',
   setup() {
-    const isDark = VueUse.useDark()
-    const toggleDark = VueUse.useToggle(isDark)
+  //  const { isDark, toggleDark } = useDarks()
+    return { isDark, toggleDark }
   }
 }
-
 </script>
 
 <template>
@@ -28,12 +27,15 @@ export default {
     </el-sub-menu>
     <el-menu-item index="3" disabled>Info</el-menu-item>
     <el-menu-item index="4">Orders</el-menu-item>
-    <!--
-    <el-menu-item h="full" @click="toggleDark()">
-      <button class="border-none w-full bg-transparent cursor-pointer" style="height: var(--el-menu-item-height);">
-        <i inline-flex i="dark:el-moon el-sunny" />
+    <el-menu-item>
+      <button
+        class="border-none w-full bg-transparent cursor-pointer"
+        tyle="height: var(--el-menu-item-height);"
+        @click="toggleDark()"
+      >
+        <!-- <i inline-flex i="dark:ep-moon ep-sunny" /> -->
+        <span>{{ isDark ? 'Dark' : 'Light' }}</span> 
       </button>
     </el-menu-item>
-    -->
   </el-menu>
 </template>

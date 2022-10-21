@@ -6,6 +6,7 @@
   - [x] App.vue
   - [x] layouts/BaseSide.vue - icon-Meun < 未得 @21/10/2022
   - [ ] layouts/BaseHeader.vue - dark.js < 未得
+  - [ ] vue3-sfc-loader import js問題, 要改js->mjs
 
 - [ ] 製作測試用頁面
   - [ ] 入口在View建立Test.vue載入components
