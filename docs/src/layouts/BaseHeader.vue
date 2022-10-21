@@ -30,12 +30,11 @@ export default {
     <el-menu-item>
       <button
         class="border-none w-full bg-transparent cursor-pointer"
-        tyle="height: var(--el-menu-item-height);"
+        style="height: var(--el-menu-item-height);"
         @click="toggleDark()"
-      >
-        <!-- <i inline-flex i="dark:ep-moon ep-sunny" /> -->
-        <span>{{ isDark ? 'Dark' : 'Light' }}</span> 
-      </button>
+      >        
+        <el-icon inline-flex>{{ isDark ? "Dark" : "Light" }}</el-icon>
+      </button>      
     </el-menu-item>
   </el-menu>
 </template>
