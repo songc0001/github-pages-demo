@@ -9,7 +9,7 @@ Main
 - element-plus UI框架
 - 參考(https://vite-starter.element-plus.org/)
 
-plugin 下一步
+下一步
 
 - [typescript-compile]<https://github.com/niutech/typescript-compile>
 - axios 數據request

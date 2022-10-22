@@ -1,15 +1,21 @@
 <script>
+const { ref } = Vue
+const { ElMessage } = ElementPlus
+
 export default {
   props: {
     msg: String
   },
-  setup(props) {
-    const ref = Vue.ref
+  setup(props) {    
     const count = ref(0)
-    const input = ref("element-plus");
+    const input = ref('element-plus')
     const curDate = ref('')
     const toast = () => {
       ElMessage.success('Hello')
+      //ElMessage({
+      //message: 'Hello',
+      //type: 'success',
+      //})
     }
     return {
       count,
@@ -67,7 +73,7 @@ export default {
 </template>
 
 <style>
-.ep-button {
+.el-button {
   margin: 4px;
 }
 </style>

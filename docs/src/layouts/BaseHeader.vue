@@ -33,7 +33,7 @@ export default {
         style="height: var(--el-menu-item-height);"
         @click="toggleDark()"
       >        
-        <el-icon inline-flex>{{ isDark ? "Dark" : "Light" }}</el-icon>
+        <span inline-flex>{{ isDark ? "Dark" : "Light" }}</span>
       </button>      
     </el-menu-item>
   </el-menu>

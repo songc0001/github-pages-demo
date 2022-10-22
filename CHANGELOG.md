@@ -2,11 +2,10 @@
 
 ## To Do List
 
-- [ ] 改Layout,先抄Element-plus個Docs, 參考vitepress, https://vite-starter.element-plus.org/
-  - [x] App.vue
-  - [x] layouts/BaseSide.vue - icon-Meun < 未得 @21/10/2022
-  - [ ] layouts/BaseHeader.vue - dark.js < 未得
-  - [ ] vue3-sfc-loader import js問題, 要改js->mjs
+- [ ] layouts/BaseHeader.vue - dark.js
+  - [ ] Invalid event arguments
+  - [ ] icon
+- [ ] vue3-sfc-loader import js問題, 要改js->mjs
 
 - [ ] 製作測試用頁面
   - [ ] 入口在View建立Test.vue載入components
@@ -21,6 +20,13 @@
 - [ ] Try to re-structure of VitePress
 
 ## 已完成
+
+
+### 22/10/2022
+
+- [x] 改Layout,先抄Element-plus個Docs, 參考vitepress, https://vite-starter.element-plus.org/
+  - [x] App.vue
+  - [x] layouts/BaseSide.vue - icon-Meun  @21/10/2022
 
 ### 18/10/2022
 

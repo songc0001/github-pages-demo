@@ -35,7 +35,7 @@ export default {
 <style>
 #app {
   text-align: center;
-  color: var(--ep-text-color-primary);
+  color: var(--el-text-color-primary);
 }
 .element-plus-logo {
   width: 50%;
